@@ -145,8 +145,14 @@ hr {
 ---------------------------------------------------*/
 
 /* Header Wrap */
+
+#top-banner {
+	margin: 0 auto; 
+	width: 100%;
+}
+
 #headerwrap {
-	background: url(../img/boston.jpg) no-repeat center top;
+	/*background: url(../img/White-Keyboard.mp4) no-repeat center top;*/
 	margin-top: 50px;
 	padding-top:140px;
 	text-align:center;
@@ -180,12 +186,12 @@ hr {
 	border: 2px solid white;
 	width: 150px;
 	height: 150px;
-	border-radius: 100px;
-
-	
+	border-radius: 100px;	
 }
 
-/* Intnro Wrap */
+
+
+/* Intro Wrap */
 
 #intro {
 	background: #2c3e50;
@@ -193,6 +199,10 @@ hr {
 	padding-bottom: 60px;
 	color: white;
 } 
+
+.intro-message {
+	width: 100%
+}
 
 #intro h5, p {
 	color: white;

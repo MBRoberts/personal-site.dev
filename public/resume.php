@@ -10,7 +10,6 @@
     <title>Resume</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
  	<link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -21,7 +20,6 @@
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
     <!--JS-->
     <script src="/js/jquery.min.js"></script>
@@ -50,15 +48,17 @@
 	
 	<!-- Header -->
 	<div id="headerwrap">
-		<div class="container">
+		<iframe class="firstsplgvideoframe" src="https://player.vimeo.com/video/156296154?api=1&autoplay=1&loop=1&byline=0&portrait=0&background=1"  webkitallowfullscreen mozallowfullscreen allowfullscreen style="overflow: hidden; position: absolute; top: 50% !important; left: 50% !important; -webkit-transform: translate(-50%, -50%) !important; -ms-transform: translate(-50%, -50%) !important; -moz-transform: translate(-50%, -50%) !important; transform: translate(-50%, -50%) !important; background:none !important; box-sizing:content-box !important; min-height:100%; min-width:100%;"></iframe>
+		<div class="container" id="top-banner">
 			<div class="row centered">
 				<div class="col-lg-12 intro-message">
 					<h1><strong>M. Benjamin Roberts</strong></h1>
 					<h3><strong>Web Designer | <a href="emailto:mikebenroberts@gmail.com">mikebenroberts@gmail.com</a></strong></h3>
+
 					<img id="profilepic" src="/img/profile.png">
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
+				</div><!-- /.col-lg-12 -->
+			</div><!-- /.row  -->
+		</div><!--/.container  -->
 	</div><!--/.#headerwrap -->
 
 	<section id="about" name="about"></section>
@@ -339,6 +339,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
   </body>
 </html>
