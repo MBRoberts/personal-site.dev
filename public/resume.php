@@ -264,7 +264,7 @@
 				<div class="col-lg-6 portfolio">
 					<div class="hovereffect">
 						<p>
-							<video class="img-responsive img-shadow" autoplay loop width="555" height="423.63" name="simon" src="/img/calculator.mov"></video>
+							<video class="img-responsive img-shadow" autoplay loop width="555" height="400" name="simon" src="/img/calculator.mov"></video>
 						</p>
 						<div class="overlay img-responsive">
 							<h2><strong><a href="#">JavaScript Calculator</a></strong></h2>
@@ -287,7 +287,7 @@
 				<div class="col-lg-6 col-lg-offset-3 portfolio">
 					<div class="hovereffect-two">
 						<p>
-							<a href="#"><video class="img-responsive img-shadow" autoplay loop width="555" height="423.63" name="simon" src="/img/simon.mov"></video></a>
+							<a href="#"><video class="img-responsive img-shadow" autoplay loop width="555" height="308" name="simon" src="/img/simon.mov"></video></a>
 						</p>
 						<div class='overlay-two img-responsive'>
 							<h2><strong><a href="#">Simple Simon</a></strong></h2>
@@ -306,15 +306,6 @@
 						<sm><i class="icon-tag"></i> front-end</sm></more>
 					</p>
 				</div>
-				<!-- <div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive img-shadow" src="/img/welcome_page.png" alt=""></p>
-				</div> -->
-				<!-- <div class="col-lg-3">
-						<p>Landing Page</p>
-					<p><more>The landing page that links to this page. I created this page on our second week at Codeup. We came a long way in a week.<br/><br/>
-						<sm><i class="icon-tag"></i> web design</sm></more> 
-					</p>
-				</div> -->
 			</div><!--/.row -->
 			<br>
 			<br>
@@ -363,7 +354,8 @@
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="/js/bootstrap.js"></script>
 		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/resume.js"></script>
 </body>
 </html>

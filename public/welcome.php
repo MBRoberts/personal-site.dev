@@ -11,14 +11,19 @@
 	<title>Welcome</title>
 
 	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Animations -->
+	<link rel="stylesheet" type="text/css" href="/css/animation.css">
 
 	<!-- Custom CSS -->
-	<link href="css/welcome.css" rel="stylesheet">
+	<link href="/css/welcome.css" rel="stylesheet">
 
-	<!-- Custom Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Fonts -->
+	<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<script src="https://use.fontawesome.com/14eea77815.js"></script>
+
 </head>
 
 <body>
@@ -49,23 +54,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="intro-message">
-						<img src="/img/profile.png" class="img-circle">
-						<h1>Ben Roberts</h1>
-						<h3><a href="mailto:mikebenroberts@gmail.com">Mikebenroberts@gmail.com</a></h3>
+					<div class=" intro-message">
+						<div id="pic" class="slideDown">
+							<img src="/img/profile.png" class="img-circle" >
+							<h1>Ben Roberts</h1>
+							<h3><a href="mailto:mikebenroberts@gmail.com">Mikebenroberts@gmail.com</a></h3>
+						</div>
 						<hr class="intro-divider">
 						<ul class="list-inline intro-social-buttons">
 							<li>
-								<a href="https://twitter.com/mikebenroberts" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+								<a href="https://twitter.com/mikebenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
 							</li>
 							<li>
-								<a href="https://www.facebook.com/mbenroberts" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
+								<a href="https://www.facebook.com/mbenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
 							</li>
 							<li>
-								<a href="https://github.com/MBRoberts" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+								<a href="https://github.com/MBRoberts" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+								<a href="https://www.linkedin.com/" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
 							</li>
 						</ul>
 					</div><!-- /.intro-message -->
@@ -80,14 +87,14 @@
 	<div class="content-section-a">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-sm-6">
+				<div class="bio col-lg-5 col-sm-6">
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
 					<h2 class="section-heading">Bio<br></h2>
 					<p class="lead">I am a recent transplant to San Antonio from Boston, MA. I moved to Texas for several reasons: 1) To escape the snow 2) Be closer to family and 3) To start a new career. I am currently studying to become a Full-Stack Developer.
 				</div>
 				<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<img class="img-responsive" src="img/bostongif.gif" alt="Boston">
+					<img id="boston-pic" class="img-responsive" src="img/bostongif.gif" alt="Boston">
 				</div>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
@@ -96,7 +103,7 @@
 	<div class="content-section-b">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+				<div class= "codeup col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
 					<h2 class="section-heading">Student at Codeup</h2>
@@ -104,7 +111,7 @@
 					<p class="lead"><a href="http://codeup.com/" target="_blank">Codeup</a> is a career accelerator that prepares you to become a software developer, even if you have no prior coding experience. With a 10 to 1 student to instructor ratio and a focus on real world project based learning, our graduates typically get hired within 6 months and increase their earning power by $17K..</p>
 				</div>
 				<div class="col-lg-5 col-sm-pull-6  col-sm-6">
-					<a href="http://codeup.com/" target="_blank"><img class="img-responsive" src="img/codeup.png" alt="Codeup"></a>
+					<a href="http://codeup.com/" target="_blank"><img class="codeup img-responsive" src="img/codeup.png" alt="Codeup"></a>
 				</div>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
@@ -113,14 +120,14 @@
 	<div class="content-section-a">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-sm-6">
+				<div class="geekdom col-lg-5 col-sm-6">
 					<hr class="section-heading-spacer">
 					<div class="clearfix"></div>
 					<h2 class="section-heading">Member of Geekdom</h2>
 					<p class="lead"><a href="http://geekdom.com/" target="_blank">Geekdom</a> is a new kind of collaborative coworking space where Entrepreneurs, Technologists, Developers, Makers & Creatives help each other build businesses & other cool things together </p>
 				</div>
-				<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<a href="http://geekdom.com/" target="_blank"><img class="img-responsive" src="img/geekdom.jpg" alt="Geekdom"></a>		
+				<div  class="col-lg-5 col-lg-offset-2 col-sm-6">
+					<a href="http://geekdom.com/" target="_blank"><img class="geekdom img-responsive" src="img/geekdom.jpg" alt="Geekdom"></a>		
 				</div>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
@@ -131,23 +138,23 @@
 	<div class="banner">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class=" bio col-lg-6">
 					<h2>Connect to Ben Roberts:</h2><br>
 					<a href="mailto:mikebenroberts@gmail.com" class="contact-email">MikeBenRoberts@gmail.com</a>
 				</div>
 				<div class="col-lg-6">
-					<ul class="list-inline banner-social-buttons">
+					<ul class="geekdom list-inline banner-social-buttons">
 						<li>
-							<a href="https://twitter.com/mikebenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+							<a href="https://twitter.com/mikebenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i> <span class="network-name"></span></a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/mbenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+							<a href="https://www.facebook.com/mbenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i> <span class="network-name"></span></a>
 						</li>
 						<li>
-							<a href="https://github.com/MBRoberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+							<a href="https://github.com/MBRoberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i> <span class="network-name"></span></a>
 						</li>
 						<li>
-							<a href="https://linkedin.com" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+							<a href="https://linkedin.com" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i> <span class="network-name"></span></a>
 						</li>
 					</ul>
 				</div><!-- /.dol-lg-6 -->
@@ -170,9 +177,7 @@
 						</li>
 						<li class="footer-menu-divider">&sdot;</li>
 						<li>
-
 							<a href="/resume.php">Resume</a>
-							<a href="#services">Services</a>
 						</li>
 						<li class="footer-menu-divider">&sdot;</li>
 						<li>
@@ -188,6 +193,7 @@
 	<!-- jQuery -->
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/welcome.js"></script>
 
 
 </body>
