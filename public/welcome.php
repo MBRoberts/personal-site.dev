@@ -145,16 +145,16 @@
 				<div class="col-lg-6">
 					<ul class="geekdom list-inline banner-social-buttons">
 						<li>
-							<a href="https://twitter.com/mikebenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i> <span class="network-name"></span></a>
+							<a href="https://twitter.com/mikebenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i><span class="network-name"></span></a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/mbenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i> <span class="network-name"></span></a>
+							<a href="https://www.facebook.com/mbenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i><span class="network-name"></span></a>
 						</li>
 						<li>
-							<a href="https://github.com/MBRoberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i> <span class="network-name"></span></a>
+							<a href="https://github.com/MBRoberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i><span class="network-name"></span></a>
 						</li>
 						<li>
-							<a href="https://linkedin.com" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i> <span class="network-name"></span></a>
+							<a href="https://linkedin.com" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i><span class="network-name"></span></a>
 						</li>
 					</ul>
 				</div><!-- /.dol-lg-6 -->
