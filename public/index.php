@@ -127,7 +127,7 @@
 					<p class="lead"><a href="http://geekdom.com/" target="_blank">Geekdom</a> is a new kind of collaborative coworking space where Entrepreneurs, Technologists, Developers, Makers & Creatives help each other build businesses & other cool things together </p>
 				</div>
 				<div  class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<a href="http://geekdom.com/" target="_blank"><img class="geekdom img-responsive" src="/img/geekdom.jpg" alt="Geekdom"></a>		
+					<a href="http://geekdom.com/" target="_blank"><img class="geekdom img-responsive" src="img/geekdom.jpg" alt="Geekdom"></a>		
 				</div>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
