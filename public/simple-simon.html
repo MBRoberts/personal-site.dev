@@ -1,0 +1,57 @@
+<DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Simon</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/simple-simon.css">
+
+    <head>
+    <body>
+        <!-- Background music -->
+        <audio id="music" loop autoplay>
+            <source src="sounds/music.mp3" type="audio/mp3">
+        </audio>
+        <!-- Background video -->
+        <video autoplay loop muted id="background">
+            <source src="grey-background.mp4" type="video/mp4">
+        </video>
+
+        <div id="round">Simple Simon</div>
+
+        <!-- Start Ribbon -->
+        <div class="center-wrap" id="disappear">
+            <div class="title-container">
+                <div class="ribbon-left"></div>
+                <div class="backflag-left"></div>
+                <div class="title "><a id="start">-    Simple Simon: Click Here to Start    -</a></div>
+                <div class="backflag-right"></div>
+                <div class="ribbon-right"></div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="container">
+            <div class="box" id="red" value="0"></div>
+            <div class="box" id="blue" value="1"></div>
+            <div class="box" id="green" value="2"></div>
+            <div class="box" id="yellow" value="3"></div>
+        </div>
+        
+        <!-- Embedded video -->
+        <iframe id="video" width="640" height="480" frameborder="0"></iframe>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- Bootstrap.js -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- JQuery Shadow Animation plugin -->
+        <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="js/simple-simon.js"></script>
+    </body>
+</html>

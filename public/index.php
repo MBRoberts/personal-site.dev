@@ -31,7 +31,7 @@
 		<div class="container topnav">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<a class="navbar-brand topnav" href="/welcome.php">Home</a>
+				<a class="navbar-brand topnav" href="/index.php">Home</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -62,10 +62,10 @@
 						<hr class="intro-divider">
 						<ul class="list-inline intro-social-buttons">
 							<li>
-								<a href="https://twitter.com/mikebenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-facebook-official fa-fw"></i> <span class="network-name">Facebook</span></a>
+								<a href="https://twitter.com/mikebenroberts" class="slideRight btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw"></i> <span class="network-name">Twitter</span></a>
 							</li>
 							<li>
-								<a href="https://www.facebook.com/mbenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-twitter-square fa-fw"></i> <span class="network-name">Twitter</span></a>
+								<a href="https://www.facebook.com/mbenroberts" class="slideRight btn btn-default btn-lg"><i class="fa fa-facebook-official fa-fw"></i> <span class="network-name">Facebook</span></a>
 							</li>
 							<li>
 								<a href="https://github.com/MBRoberts" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-github-square fa-fw"></i> <span class="network-name">Github</span></a>

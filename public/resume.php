@@ -15,21 +15,24 @@
 		<link rel="stylesheet" type="text/css" href="/css/welcome.css">
 		<link href="/css/resume.css" rel="stylesheet">   
 		
-		<!-- Fonts -->
+		<!-- Fonts & Icons-->
 		<link rel="stylesheet" href="/css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
 		
 		<!--JS-->
-		<script src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/a7f4eb92c7.js"></script>
 		<script src="/js/Chart.js"></script>
+		
 	</head>
 	<body data-spy="scroll" data-offset="0" data-target="#nav">
 		<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
 			<div class="container topnav">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<a class="navbar-brand topnav" href="/welcome.php"><strong>Home</strong></a>
+					<a class="navbar-brand topnav" href="/index.php"><strong>Home</strong></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -47,7 +50,7 @@
 		
 		<!-- Header -->
 		<div id="headerwrap">
-			<iframe class="banner-video"src="https://player.vimeo.com/video/156296154?api=1&autoplay=1&loop=1&byline=0&portrait=0&background=1"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			
 			<div class="container" id="top-banner">
 				<div class="row centered">
 					<div class="col-lg-12 intro-message">
@@ -71,7 +74,7 @@
 						<p>I'm a web designer & front-end developer. My major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like management, sales and web development.</p>
 					</div>
 					<div class="col-lg-3">
-						<p><a href="/img/ben_resume.pdf" target="_blank"><i class="fa file"></i><sm>PDF RESUME</sm></a></p>
+						<p><a href="/img/ben_resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><sm>PDF RESUME</sm></a></p>
 					</div><!--/.col-lg-3 -->
 				</div><!--/.row -->
 			</div><!--/.container -->
@@ -142,7 +145,7 @@
 					<div class="col-lg-2 col-lg-offset-1">
 						<h5>SKILLS</h5>
 					</div>
-					<div class="col-lg-3 centered skills-canvas">
+					<div class="col-xs-12 col-lg-3 centered skills-canvas">
 						<canvas id="javascript" height="130" width="130"></canvas>
 						<script>
 							var doughnutData = [
@@ -159,7 +162,7 @@
 						</script>
 						<img src="/img/javascript.png" id="js-position">
 					</div>
-					<div class="col-lg-3 centered skills-canvas">
+					<div class="col-xs-12 col-lg-3 centered skills-canvas">
 						<canvas id="bootstrap" height="130" width="130"></canvas>
 						<script>
 							var doughnutData = [
@@ -176,7 +179,7 @@
 						</script>
 						<img src="/img/bootstrap.png" id="bootstrap-position">
 					</div>
-					<div class="col-lg-3 centered skills-canvas">
+					<div class="col-xs-12 col-lg-3 centered skills-canvas">
 						<canvas id="jquery" height="130" width="130"></canvas>
 						<script>
 							var doughnutData = [
@@ -194,7 +197,7 @@
 						<img src="/img/jquery.png" id="jquery-position">
 
 					</div>
-					<div class="col-lg-3 col-lg-offset-3 centered skills-canvas">
+					<div class="col-xs-12 col-lg-3 col-lg-offset-3 centered skills-canvas">
 						<canvas id="html" height="130" width="130"></canvas>
 						<script>
 							var doughnutData = [
@@ -212,7 +215,7 @@
 						<img src="/img/html5.png" id='html-position'>
 
 					</div>
-					<div class="col-lg-3 centered skills-canvas">
+					<div class="col-xs-12 col-lg-3 centered skills-canvas">
 						<canvas id="css" height="130" width="130"></canvas>
 						<script>
 							var doughnutData = [
@@ -230,17 +233,17 @@
 						<img src="/img/css3.png" id="css-position">
 
 					</div>
-					<div class="col-lg-3 centered skills-canvas">
+					<div class="col-xs-12 col-lg-3 centered skills-canvas">
 						<canvas id="php" height="130" width="130"></canvas>
 						<img src="/img/php.png" id="php-position">
 						<script>
 							var doughnutData = [
 									{
-										value: 5,
+										value: 50,
 										color:"#1abc9c"
 									},
 									{
-										value : 95,
+										value : 50,
 										color : "#ecf0f1"
 									}
 								];
@@ -261,13 +264,13 @@
 					<h4>PORTFOLIO</h4>
 				</div>
 
-				<div class="col-lg-6 portfolio">
+				<div class="col-xs-12 col-lg-6 portfolio">
 					<div class="hovereffect">
 						<p>
 							<img class="gif-image img-responsive img-shadow" src="/img/calculator.gif">
 						</p>
 						<div class="overlay img-responsive">
-							<h2><strong><a href="#">JavaScript Calculator</a></strong></h2>
+							<h2><strong><a href="/calculator.html">JavaScript Calculator</a></strong></h2>
 							<p>
 								<more>I finished rather quickly so I went on to add extra features such as a conversion calculator, a graphing calculator, and button animations.</more> 
 							</p>
@@ -276,31 +279,31 @@
 					</div>
 				</div>
 
-				<div class="col-lg-3">
-					<p><strong><a href="#">Codeup Project</a></strong></p>
+				<div class="col-xs-12 col-lg-3">
+					<p><strong><a href="/calculator.html">JavaScript Calculator</a></strong></p>
 					<p>
 						<more>Our project was to create a basic, functioning calculator running off vanilla JavaScript.<br/><br/>
 						<sm><i class="icon-tag"></i> design</sm></more> 
 					</p>
 				</div>
 
-				<div class="col-lg-6 col-lg-offset-3 portfolio">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3 portfolio">
 					<div class="hovereffect-two">
 						<p>
-							<a href="#"><img class="gif-image img-responsive img-shadow"src="/img/simon.gif"></a><!-- <video class="" autoplay loop width="555" height="308" name="simon" src="/img/simon.mov"></video> -->
+							<a href="/simple-simon.html"><img class="gif-image img-responsive img-shadow"src="/img/simon.gif"></a>
 						</p>
 						<div class='overlay-two img-responsive'>
-							<h2><strong><a href="#">Simple Simon</a></strong></h2>
+							<h2><strong><a href="/simple-simon.html">Simple Simon</a></strong></h2>
 							<p>
 								<more>I included light animations as well as background music and a moving background. Both the animations and music speed up with game progress.</more> 
 							</p>
-							<a class="info"href="#">View Here</a>
+							<a class="info" href="/simple-simon.html">View Here</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-lg-3">
-					<p><strong><a href="#">Codeup Project</a></strong></p>
+					<p><strong><a href="/simple-simon.html">Codeup Project</a></strong></p>
 					<p>
 						<more>The assignment was to create a Simple Simon game that had the same functionality as the classic 80s game.<br/><br/>
 						<sm><i class="icon-tag"></i> front-end</sm></more>
@@ -354,7 +357,7 @@
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		
 		<script src="/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/js/resume.js"></script>
 </body>

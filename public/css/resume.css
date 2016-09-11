@@ -145,28 +145,11 @@ hr {
 ---------------------------------------------------*/
 
 /* Header Wrap */
-iframe {
-	overflow: hidden; 
-	position: absolute; 
-	top: 50% !important; 
-	left: 50% !important; 
-	-webkit-transform: translate(-50%, -50%) !important; 
-	-ms-transform: translate(-50%, -50%) !important; 
-	-moz-transform: translate(-50%, -50%) !important; 
-	transform: translate(-50%, -50%) !important; 
-	background:none !important; 
-	box-sizing:content-box !important; 
-	min-height:100%; 
-	min-width:100%;
-}
-
-.banner-video {
-	height:975px;
-	z-index: -100;
-}
 
 #headerwrap {
-	/*background: url(../img/White-Keyboard.mp4) no-repeat center top;*/
+	background-image: url(/img/banner.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin-top: 50px;
 	padding-top:140px;
 	text-align:center;
@@ -533,3 +516,7 @@ sm {
   transition-delay: 0.3s;
 }
 
+.gif-image {
+	
+	max-width: 556px;
+}
