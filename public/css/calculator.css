@@ -1,0 +1,199 @@
+body {
+	padding-top: 0px;
+	background-image: url(/img/Wood-Texture1.jpg);
+	background-size: cover;
+	background-attachment: fixed;scroll
+	
+}
+
+.container .container {
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+.container.keypad {
+	padding-top: 5px;
+	margin-left: 0px;
+}
+
+.size-container {
+	width: 450px;
+}
+
+.jumbotron {
+	width: 440px;
+	height: 20%;
+	margin: 10px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: 1px solid black;
+	border-radius: 40px;
+	box-shadow: -10px 10px 10px #888;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+.jumbotron>h2 {
+	text-align: center;
+	font-family: fantasy;
+	color: white;
+	margin-top: 0px;
+	padding-top: 0px;
+	border-bottom: 1px solid white;
+}
+
+.input-lg {
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgba(204, 249, 213, .5);
+	font-family: 'digital-7';
+	font-size: 2.5em;
+	text-align: right;
+	box-shadow: -7px 7px 5px #222;
+	overflow: auto;
+}
+
+.input-display {
+	width: 100%;
+	margin: 0px;
+	margin-top: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: -10px 10px 10px #888;
+	overflow: scroll;
+}
+
+.keypad {
+	width: 100%;
+	margin: 10px;
+	padding: 20px;
+	height: 60%;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: -10px 10px 10px #888;
+}
+
+.numButtons {
+	width: 100%;
+	height: 13%;
+	border: 2px solid black;
+	border-radius: 50px;
+	padding-top: 0px;
+	margin-top: 10px;
+	font-family: 'digital-7';
+	font-size: 2.25em;
+	box-shadow: -5px 5px 5px #111;
+}
+
+.numButtons:focus {
+	outline:0;
+}
+
+.dropdown > .dropdown-menu li {
+	padding: 0;
+}
+
+.dropdown > .dropdown-menu li a {
+	display: block;
+	color: #000;
+	background: #000;
+	-moz-box-shadow: 0 1px 0 white inset, 0 -1px 0 #000 inset;
+	-webkit-box-shadow: 0 1px 0 white inset, 0 -1px 0 #000 inset;
+	box-shadow: 0 1px 0 white inset, 0 -1px 0 #000 inset;
+	text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+	padding: 10px 10px;
+}
+
+.dropdown > .dropdown-menu li a:hover {
+	background: #000;
+}
+
+.dropdown > input[type="checkbox"] {
+	opacity: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.title {
+	font-family: 'fantasy';
+	font-weight: norma;
+	font-size: 40px;
+	text-align: center;
+	line-height: 1.4;
+	color: #000;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown a {
+	text-decoration: none;
+}
+
+.dropdown [data-toggle="dropdown"] {
+	display: block;
+	color: white;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,	rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+	-moz-box-shadow: 0 1px 0 #d65548 inset, 0 -1px 0 #962d22 inset;
+	-webkit-box-shadow: 0 1px 0 #d65548 inset, 0 -1px 0 #962d22 inset;
+	box-shadow: 0 1px 0 #888 inset, 0 -1px 0 #962d22 inset;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+
+.graph {
+	background-color: rgba(204, 249, 213, .5);
+	margin-left: 0px;
+}
+
+#operator {
+	text-align: center;
+	font-size: 2em;
+}
+
+#rightOperand {
+	text-align: left;
+}
+
+#display {
+	margin-top: 10px;
+	text-align: left;
+}
+
+
+#hexbuttons {
+	width:100%;
+	margin: 10px;
+	box-shadow: -5px 5px 5px #888;
+	font-family: sans-serif;
+}
+
+#dropmenu {
+	border-radius: 50px;
+}
+
+span {
+	text-decoration:overline;
+	font-family: sans-serif;
+}
+
+button {
+	padding: 0px;
+}

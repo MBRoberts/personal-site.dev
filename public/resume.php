@@ -9,7 +9,7 @@
 		<title>Resume</title>
 
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link rel="stylesheet" type="text/css" href="/css/welcome.css">
@@ -71,7 +71,7 @@
 						<p>I'm a web designer & front-end developer. My major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like management, sales and web development.</p>
 					</div>
 					<div class="col-lg-3">
-						<p><a href="/img/ben_resume.pdf" target="_blank"><i class="icon-file"></i><sm>PDF RESUME</sm></a></p>
+						<p><a href="/img/ben_resume.pdf" target="_blank"><i class="fa file"></i><sm>PDF RESUME</sm></a></p>
 					</div><!--/.col-lg-3 -->
 				</div><!--/.row -->
 			</div><!--/.container -->
@@ -258,20 +258,20 @@
 		<div class="container desc">
 			<div class="row">
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>PORTFOLIO</h5>
+					<h4>PORTFOLIO</h4>
 				</div>
 
 				<div class="col-lg-6 portfolio">
 					<div class="hovereffect">
 						<p>
-							<video class="img-responsive img-shadow" autoplay loop width="555" height="400" name="simon" src="/img/calculator.mov"></video>
+							<img class="gif-image img-responsive img-shadow" src="/img/calculator.gif">
 						</p>
 						<div class="overlay img-responsive">
 							<h2><strong><a href="#">JavaScript Calculator</a></strong></h2>
 							<p>
 								<more>I finished rather quickly so I went on to add extra features such as a conversion calculator, a graphing calculator, and button animations.</more> 
 							</p>
-							<a href="#">View Here</a>
+							<a href="/calculator.html">View Here</a>
 						</div>
 					</div>
 				</div>
@@ -287,7 +287,7 @@
 				<div class="col-lg-6 col-lg-offset-3 portfolio">
 					<div class="hovereffect-two">
 						<p>
-							<a href="#"><video class="img-responsive img-shadow" autoplay loop width="555" height="308" name="simon" src="/img/simon.mov"></video></a>
+							<a href="#"><img class="gif-image img-responsive img-shadow"src="/img/simon.gif"></a><!-- <video class="" autoplay loop width="555" height="308" name="simon" src="/img/simon.mov"></video> -->
 						</p>
 						<div class='overlay-two img-responsive'>
 							<h2><strong><a href="#">Simple Simon</a></strong></h2>

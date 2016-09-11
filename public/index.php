@@ -21,7 +21,6 @@
 	<!-- Fonts -->
 	<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
 	<script src="https://use.fontawesome.com/14eea77815.js"></script>
 
 </head>
@@ -63,16 +62,16 @@
 						<hr class="intro-divider">
 						<ul class="list-inline intro-social-buttons">
 							<li>
-								<a href="https://twitter.com/mikebenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+								<a href="https://twitter.com/mikebenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-facebook-official fa-fw"></i> <span class="network-name">Facebook</span></a>
 							</li>
 							<li>
-								<a href="https://www.facebook.com/mbenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
+								<a href="https://www.facebook.com/mbenroberts" class="slideRight btn btn-default btn-lg"><i class=" fa fa-twitter-square fa-fw"></i> <span class="network-name">Twitter</span></a>
 							</li>
 							<li>
-								<a href="https://github.com/MBRoberts" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+								<a href="https://github.com/MBRoberts" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-github-square fa-fw"></i> <span class="network-name">Github</span></a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+								<a href="https://www.linkedin.com/" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-linkedin-square fa-fw"></i> <span class="network-name">Linkedin</span></a>
 							</li>
 						</ul>
 					</div><!-- /.intro-message -->
@@ -191,8 +190,8 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/welcome.js"></script>
 
 

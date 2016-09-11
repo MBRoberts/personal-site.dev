@@ -1,0 +1,132 @@
+
+<!-- saved from url=(0066)http://extra-projects.dev/contact-manager.html?usrtel=123-123-1234 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body cz-shortcut-listen="true"><doctype html="">
+
+
+	
+
+		
+		<title>Contacts Manager</title>
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" type="text/css" href="./Contacts Manager_files/bootstrap.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="./Contacts Manager_files/contact-manager.css">
+
+	
+	
+		<!-- Search Field -->
+		<input id="input-search" class="form-control" type="search" placeholder="Contact Search">
+		<div class="container">
+
+			<h1>Contacts Manager</h1>
+
+			<!-- Contact Info -->
+			<table class="table table-striped">
+
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Phone Number</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+
+				<tbody id="results">            <tr id="0">       <td>Bob</td>       <td>bob@email.com</td>       <td>123-123-1234</td>       <td><button class="btn btn-default btn-edit" data-tablerow="0" data-toggle="modal" data-target="#myModal">Edit</button>       <button class="btn btn-danger" id="btn-delete">Remove</button>      </td></tr>           <tr id="1">       <td>Sarah</td>       <td>sarah@email.com</td>       <td>123-123-1234</td>       <td><button class="btn btn-default btn-edit" data-tablerow="1" data-toggle="modal" data-target="#myModal">Edit</button>       <button class="btn btn-danger" id="btn-delete">Remove</button>      </td></tr>           <tr id="2">       <td>George</td>       <td>george@email.com</td>       <td>987-987-8765</td>       <td><button class="btn btn-default btn-edit" data-tablerow="2" data-toggle="modal" data-target="#myModal">Edit</button>       <button class="btn btn-danger" id="btn-delete">Remove</button>      </td></tr>         </tbody>
+
+			</table>
+
+			<script type="text/html" id="item_tmpl">
+
+				<% for (var i = 0 ; i < contacts.length ; i++) { %>
+					<tr id="<%=contacts[i].id%>">
+						<td><%=contacts[i].name%></td>
+						<td><%=contacts[i].email%></td>
+						<td><%=contacts[i].phone%></td>
+						<td><button class="btn btn-default btn-edit" data-tablerow="<%=contacts[i].id%>" data-toggle="modal" data-target="#myModal">Edit</button>
+						<button class="btn btn-danger" id="btn-delete">Remove</button>
+					</tr>
+				<% } %>
+			</script>
+
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4 class="modal-title">Edit Contact</h4>
+						</div>
+
+						<div class="modal-body">
+							<form data-toggle="validator" id="form-edit" role="form">
+								<div class="form-group">
+									<label for="input-edit-name" class="control-label">Name</label>
+									<input type="text" class="form-control" id="input-edit-name" placeholder="Enter Name" required="">
+								</div>
+
+								<br>
+
+								<div class="form-group">
+									<label for="input-edit-email" class="control-label">Email Address</label>
+									<input pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" class="form-control" id="input-edit-email" placeholder="Email" data-error="Must be a valid Email" required="">
+									<div class="help-block with-errors"></div>
+								</div>
+
+								<br>
+
+								<div class="form-group">
+									<label for="input-edit-phone" class="control-label">Phone Number</label>
+									<input type="tel" name="usrtel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="form-control" id="input-edit-phone" placeholder="Phone Number" required="">
+									<div class="help-block with-errors"></div>
+								</div>
+							</form></div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+								<button type="submit" id="btn-save" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+							
+						</div>
+
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal fade -->
+
+			<hr>
+
+			<!-- Input Form -->
+			<h2>Add Contact</h2>
+			<form data-toggle="validator" id="form-add" role="form">
+				<div class="form-group">
+    				<label for="input-new-name" class="control-label">Name</label>
+    				<input type="text" class="form-control" id="input-new-name" placeholder="Enter Name" required="">
+  				</div>
+  				<br>
+				<div class="form-group">
+    				<label for="input-new-email" class="control-label">Email</label>
+    				<input pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" class="form-control" id="input-new-email" placeholder="Email" data-error="Must be a valid Email" required="">
+    				<div class="help-block with-errors"></div>
+ 				</div>
+ 				<br>
+				<div class="form-group">
+    				<label for="input-new-phone" class="control-label">Phone Number</label>
+    				<input type="tel" name="usrtel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="form-control" id="input-new-phone" placeholder="Phone Number" required="">
+    				<div class="help-block with-errors"></div>
+ 				</div>
+				<br>
+				<button id="btn-clear" type="button" class="btn btn-secondary">Clear</button>
+				<button type="submit" id="btn-new" class="btn btn-success">Add Contact</button>
+			</form>
+
+		</div><!-- /.container -->
+
+		<!-- Jquery -->
+		<script type="text/javascript" src="./Contacts Manager_files/jquery.min.js"></script>
+		<script type="text/javascript" src="./Contacts Manager_files/jquery.storageapi.js"></script>
+  		<script src="./Contacts Manager_files/bootstrap.min.js"></script>
+		<!-- Custom JavaScript -->
+		<script type="text/javascript" src="./Contacts Manager_files/contact-manager.js"></script>
+	
+</doctype></body></html>
