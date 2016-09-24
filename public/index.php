@@ -71,7 +71,7 @@
 								<a href="https://github.com/MBRoberts" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-github-square fa-fw"></i> <span class="network-name">Github</span></a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-linkedin-square fa-fw"></i> <span class="network-name">Linkedin</span></a>
+								<a href="https://www.linkedin.com/in/mbenroberts" class="slideLeft btn btn-default btn-lg"><i class=" fa fa-linkedin-square fa-fw"></i> <span class="network-name">Linkedin</span></a>
 							</li>
 						</ul>
 					</div><!-- /.intro-message -->
@@ -153,7 +153,7 @@
 							<a href="https://github.com/MBRoberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i> <span class="network-name"></span></a>
 						</li>
 						<li>
-							<a href="https://linkedin.com" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i> <span class="network-name"></span></a>
+							<a href="https://www.linkedin.com/in/mbenroberts" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i> <span class="network-name"></span></a>
 						</li>
 					</ul>
 				</div><!-- /.dol-lg-6 -->
