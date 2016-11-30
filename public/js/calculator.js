@@ -145,7 +145,7 @@ function exponents() {
 	var exponent = parseInt(document.getElementById('rightOperand').value);
 	var total = base;
 
-	for (var i = exponent - 1 ; i > 0 ; i--) {
+	for (var i = 0 ; i < exponent - 1 ; i++) {
 
 		total *= base;
 
