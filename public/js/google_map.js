@@ -149,4 +149,4 @@ function init(lat, lon) {
     });
     
 }
-// google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'load', getLocation);
