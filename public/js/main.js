@@ -433,7 +433,19 @@
 		}
 	};
 
-
+	$("#send-message").on('click', function(e){
+		// parameters: service_id, template_id, template_parameters
+		emailjs.send("gmail","template_QeNlNLzY",{
+			name: $("#name").val(), 
+			phone: $("#phone").val(),
+			email: $("#email").val(),
+			message: $("#message").val()
+		}).then(function(response) {
+		   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+		}, function(err) {
+		   console.log("FAILED. error=", err);
+		});
+	});
 	
 	
 

@@ -1,9 +1,47 @@
 
 var google;
 
-function init() {
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    var lat = (position) ? position.coords.latitude : 29.443134;
+    var lon = (position) ? position.coords.longitude : -98.48138;
+    console.log(lat.coords.latitude);
+    init(lat, lon);
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            alert("User denied the request for Geolocation.")
+            break;
+        case error.PERMISSION_UNAVAILABLE:
+            alert("Location information is unavailable.")
+            break;
+        case error.TIMEOUT:
+            alert("The request to get user location timed out.")
+            break;
+        case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.")
+            break;
+    }
+    showPosition();
+}
+
+function init(lat, lon) {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+
+    lat = (lat) ? lat : 29.426791;
+    lon = (lon) ? lon : -98.489602;
+
+    console.log(lat);
     
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
@@ -11,8 +49,8 @@ function init() {
 
         // The latitude and longitude to center the map (always required)
         center: {
-                lat:  29.426791,
-                lng: -98.489602
+                lat: lat,
+                lng: lon
             },
 
         // How you would like to style the map. 
@@ -107,19 +145,11 @@ function init() {
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
     
-    var addresses = ['600 Navarro St San Antonio, TX'];
-
-    for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map
-            });
-
-        });
-    }
+    var latlng = new google.maps.LatLng(lat, lon);
+    new google.maps.Marker({
+        position: latlng,
+        map: map
+    });
     
 }
 google.maps.event.addDomListener(window, 'load', init);
