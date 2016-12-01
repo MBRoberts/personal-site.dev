@@ -12,7 +12,6 @@ function getLocation() {
 function showPosition(position) {
     var lat = (position) ? position.coords.latitude : 29.443134;
     var lon = (position) ? position.coords.longitude : -98.48138;
-    console.log(lat.coords.latitude);
     init(lat, lon);
 }
 
