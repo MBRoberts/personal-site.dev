@@ -40,8 +40,6 @@ function init(lat, lon) {
 
     lat = (lat) ? lat : 29.426791;
     lon = (lon) ? lon : -98.489602;
-
-    console.log(lat);
     
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
@@ -152,4 +150,4 @@ function init(lat, lon) {
     });
     
 }
-google.maps.event.addDomListener(window, 'load', init);
+// google.maps.event.addDomListener(window, 'load', init);
