@@ -36,7 +36,8 @@ function showError(error) {
 function init(lat, lon) {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-
+    console.log("lat" + lat);
+    console.log("lon" + lon);
     lat = (lat) ? lat : 29.426791;
     lon = (lon) ? lon : -98.489602;
     
