@@ -1,17 +1,19 @@
 
 var google;
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
-}
+// function getLocation() {
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(showPosition, showError);
+//     } else {
+//         alert("Geolocation is not supported by this browser.");
+//     }
+// }
 
 function showPosition(position) {
-    var lat = (position) ? position.coords.latitude : 29.443134;
-    var lon = (position) ? position.coords.longitude : -98.48138;
+    // var lat = (position) ? position.coords.latitude : 29.443134;
+    // var lon = (position) ? position.coords.longitude : -98.48138;
+    var lat = 29.443134;
+    var lon = -98.48138;
     init(lat, lon);
 }
 
@@ -36,8 +38,6 @@ function showError(error) {
 function init(lat, lon) {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    console.log("lat" + lat);
-    console.log("lon" + lon);
     lat = (lat) ? lat : 29.426791;
     lon = (lon) ? lon : -98.489602;
     
@@ -150,4 +150,4 @@ function init(lat, lon) {
     });
     
 }
-google.maps.event.addDomListener(window, 'load', getLocation);
+google.maps.event.addDomListener(window, 'load', showPosition);
