@@ -2,8 +2,6 @@
 	
 	'use strict';
 
-
-
 	// iPad and iPod detection	
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
@@ -21,8 +19,6 @@
 		$(window).stellar();
 	};
 
-
-
 	// Burger Menu
 	var burgerMenu = function() {
 
@@ -35,13 +31,8 @@
 			} else {
 				$(this).addClass('active');	
 			}
-
-			
-			
 		});
-
 	};
-
 
 	var goToTop = function() {
 
@@ -55,9 +46,7 @@
 			
 			return false;
 		});
-	
 	};
-
 
 	// Page Nav
 	var clickMenu = function() {
@@ -81,8 +70,6 @@
 		    event.preventDefault();
 		    return false;
 		});
-
-
 	};
 
 	// Reflect scrolling in navigation
@@ -116,12 +103,7 @@
 		}, {
 		  	offset: function() { return -$(this.element).height() + 155; }
 		});
-
 	};
-
-
-	
-
 
 	// Window Scroll
 	var windowScroll = function() {
@@ -142,11 +124,8 @@
 					}, 100 );
 				}
 			} 
-			
 		});
 	};
-
-
 
 	// Animations
 	// Home
@@ -157,7 +136,6 @@
 			$('#fh5co-home').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-
 
 					setTimeout(function() {
 						$('#fh5co-home .to-animate').each(function( k ) {
@@ -170,15 +148,11 @@
 						});
 					}, 200);
 
-					
-					$(this.element).addClass('animated');
-						
+					$(this.element).addClass('animated');	
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
-
 
 	var introAnimate = function() {
 		if ( $('#fh5co-intro').length > 0 ) {	
@@ -187,7 +161,6 @@
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
-
 					setTimeout(function() {
 						$('#fh5co-intro .to-animate').each(function( k ) {
 							var el = $(this);
@@ -195,16 +168,12 @@
 							setTimeout ( function () {
 								el.addClass('fadeInRight animated');
 							},  k * 200, 'easeInOutExpo' );
-							
 						});
 					}, 1000);
 
-					
 					$(this.element).addClass('animated');
-						
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
 
@@ -215,7 +184,6 @@
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
-
 					setTimeout(function() {
 						$('#fh5co-work .to-animate').each(function( k ) {
 							var el = $(this);
@@ -223,19 +191,15 @@
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-							
 						});
 					}, 200);
 
-					
 					$(this.element).addClass('animated');
 						
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
-
 
 	var testimonialAnimate = function() {
 		var testimonial = $('#fh5co-testimonials');
@@ -275,7 +239,6 @@
 						
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
 
@@ -312,13 +275,10 @@
 						});
 					}, sec);
 
-
-					
 					$(this.element).addClass('animated');
 						
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
 
@@ -342,13 +302,10 @@
 						});
 					}, 200);
 
-					
-
 					$(this.element).addClass('animated');
 						
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
 
@@ -393,18 +350,12 @@
 						});
 					}, sec);
 
-					
-
-					
-
 					$(this.element).addClass('animated');
 						
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
-
 
 	var contactAnimate = function() {
 		var contact = $('#fh5co-contact');
@@ -429,7 +380,6 @@
 						
 				}
 			} , { offset: '80%' } );
-
 		}
 	};
 
@@ -446,12 +396,6 @@
 		   console.log("FAILED. error=", err);
 		});
 	});
-	
-	
-
-
-	
-	
 
 	// Document on load.
 	$(document).ready(function(){
@@ -467,7 +411,6 @@
 		navigationSection();
 
 		goToTop();
-
 
 		// Animations
 		homeAnimate();

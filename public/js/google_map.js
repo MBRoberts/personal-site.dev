@@ -1,19 +1,17 @@
 
 var google;
 
-// function getLocation() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(showPosition, showError);
-//     } else {
-//         alert("Geolocation is not supported by this browser.");
-//     }
-// }
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
 
 function showPosition(position) {
-    // var lat = (position) ? position.coords.latitude : 29.443134;
-    // var lon = (position) ? position.coords.longitude : -98.48138;
-    var lat = 29.443134;
-    var lon = -98.48138;
+    var lat = (position) ? position.coords.latitude : 29.443134;
+    var lon = (position) ? position.coords.longitude : -98.48138;
     init(lat, lon);
 }
 
@@ -150,4 +148,4 @@ function init(lat, lon) {
     });
     
 }
-google.maps.event.addDomListener(window, 'load', showPosition);
+google.maps.event.addDomListener(window, 'load', init);

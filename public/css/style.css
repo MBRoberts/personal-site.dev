@@ -57,6 +57,13 @@ small{
 	bottom: 8px;
 }
 
+.ssh{
+	width: 50%;
+	height: 30px;
+	overflow: auto;
+	word-wrap: break-word;
+
+}
 h1, h2, h3, h4, h5, h6 {
 	color: #000;
 	font-family: "Source Sans Pro", Arial, sans-serif;
@@ -966,6 +973,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-work .fh5co-project-item:hover h2, #fh5co-work .fh5co-project-item:hover span, #fh5co-work .fh5co-project-item:focus h2, #fh5co-work .fh5co-project-item:focus span {
 	text-decoration: none !important;
+}
+
+#joey{
+	position: fixed;
+	top: 10%;
+	left: 17%;
+	z-index: 1000;
+	display:none;
+
 }
 
 .fh5co-person {
