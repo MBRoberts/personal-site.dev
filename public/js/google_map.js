@@ -36,12 +36,13 @@ function showError(error) {
 function init(lat, lon) {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    lat = (lat) ? lat : 29.426791;
-    lon = (lon) ? lon : -98.489602;
+    
+    lat = 29.426791;
+    lon = -98.489602;
     
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 9,
+        zoom: 12,
 
         // The latitude and longitude to center the map (always required)
         center: {
@@ -131,7 +132,60 @@ function init(lat, lon) {
                         "lightness": 100
                     }]
                 }]
-    };
+        // styles: [{
+        //     "featureType": "all",
+        //     "elementType": "all",
+        //     "stylers": [{
+        //             "invert_lightness": true
+        //         },{
+        //             "saturation": 20
+        //         },{
+        //             "lightness": 50
+        //         },{
+        //             "gamma": 0.4
+        //         },{
+        //             "hue": "#00ffee"
+        //         }]
+        // },{
+        //     "featureType": "all",
+        //     "elementType": "geometry",
+        //     "stylers": [{
+        //             "visibility": "simplified"
+        //         }]
+        // },{
+        //     "featureType": "all",
+        //     "elementType": "labels",
+        //     "stylers": [{
+        //             "visibility": "on"
+        //         }]
+        // },{
+        //     "featureType": "administrative",
+        //     "elementType": "all",
+        //     "stylers": [{
+        //             "color": "#ffffff"
+        //         },{
+        //             "visibility": "simplified"
+        //         }]
+        // },{
+        //     "featureType": "administrative.land_parcel",
+        //     "elementType": "geometry.stroke",
+        //     "stylers": [{
+        //             "visibility": "simplified"
+        //         }]
+        // },{
+        //     "featureType": "landscape",
+        //     "elementType": "all",
+        //     "stylers": [{
+        //             "color": "#405769"
+        //         }]
+        // },{
+        //     "featureType": "water",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [{
+        //             "color": "#232f3a"
+        //         }]
+        // }]
+};
 
 
     // Get the HTML DOM element that will contain your map 
@@ -141,11 +195,11 @@ function init(lat, lon) {
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
     
-    var latlng = new google.maps.LatLng(lat, lon);
-    new google.maps.Marker({
-        position: latlng,
-        map: map
-    });
+    // var latlng = new google.maps.LatLng(lat, lon);
+    // new google.maps.Marker({
+    //     position: latlng,
+    //     map: map
+    // });
     
 }
 google.maps.event.addDomListener(window, 'load', init);
